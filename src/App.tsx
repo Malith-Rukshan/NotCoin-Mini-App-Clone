@@ -15,6 +15,10 @@ function App() {
   const handleMouseDown = () => setIsPressed(true);
   const handleMouseUp = () => setIsPressed(false);
 
+  const openGithub = () => {
+    window.open('https://github.com/Malith-Rukshan/NotCoin-Mini-App-Clone');
+  };
+
   const handleClick = (e: React.MouseEvent<HTMLDivElement, MouseEvent>) => {
     if (energy - energyToReduce < 0) {
       return;
@@ -85,17 +89,17 @@ function App() {
             </div>
             <div className="flex-grow flex items-center max-w-60 text-sm">
               <div className="w-full bg-[#fad258] py-4 rounded-2xl flex justify-around">
-                <button className="flex flex-col items-center gap-1">
+                <button className="flex flex-col items-center gap-1" onClick={openGithub}>
                   <img src='./images/bear.png' width={24} height={24} alt="High Voltage"/>
                   <span>Frens</span>
                 </button>
                 <div className="h-[48px] w-[2px] bg-[#fddb6d]"></div>
-                <button className="flex flex-col items-center gap-1">
+                <button className="flex flex-col items-center gap-1" onClick={openGithub}>
                   <img src='./images/coin.png' width={24} height={24} alt="High Voltage" />
                   <span>Earn</span>
                 </button>
                 <div className="h-[48px] w-[2px] bg-[#fddb6d]"></div>
-                <button className="flex flex-col items-center gap-1">
+                <button className="flex flex-col items-center gap-1" onClick={openGithub}>
                   <img src='./images/rocket.png' width={24} height={24} alt="High Voltage" />
                   <span>Boosts</span>
                 </button>
