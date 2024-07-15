@@ -124,7 +124,6 @@ function App() {
                 userSelect: 'none',
                 transform: isPressed ? 'translateY(4px)' : 'translateY(0px)',
                 transition: 'transform 100ms ease',
-                filter: 'drop-shadow(0px 4px 28px rgba(0, 0, 0, 0.15))'
               }}
               className='select-none'
             />
