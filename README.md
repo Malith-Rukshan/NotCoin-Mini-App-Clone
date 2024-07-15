@@ -13,6 +13,8 @@
 
 <div align="center">
   - Only for Educational Purposes. -
+  <br/>
+  <sup><sub>Probably Nothing ツ</sub></sup>
   <br />
   <br />
   <a href="https://vitejs.dev/">ViteJS</a>
