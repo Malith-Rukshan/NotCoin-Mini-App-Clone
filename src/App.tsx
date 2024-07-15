@@ -108,7 +108,7 @@ function App() {
         </div>
 
 
-        <div className="flex-grow flex items-center justify-center">
+        <div className="flex-grow flex items-center justify-center select-none">
           <div className="relative mt-4"
             onClick={handleClick}
             onMouseDown={handleMouseDown}
@@ -118,6 +118,7 @@ function App() {
             onTouchEnd={handleMouseUp} 
             onTouchCancel={handleMouseUp}>
             <img src='./images/notcoin.png' width={256} height={256} alt="notcoin"
+              draggable="false"
               style={{
                 pointerEvents: 'none',
                 userSelect: 'none',
@@ -125,6 +126,7 @@ function App() {
                 transition: 'transform 100ms ease',
                 filter: 'drop-shadow(0px 4px 28px rgba(0, 0, 0, 0.15))'
               }}
+              className='select-none'
             />
             {clicks.map((click) => (
               <div
